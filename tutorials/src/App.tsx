@@ -1,6 +1,22 @@
 import { useState } from "react";
 import "./App.css";
 
+export const calculateExpression = (input: string): string => {
+  try {
+    return eval(input).toString();
+  } catch {
+    return "Error";
+  }
+};
+
+export const appendValue = (prev: string, value: string): string => {
+  return prev + value;
+};
+
+export const clearInput = (): string => {
+  return "";
+};
+
 function App() {
   const [input, setInput] = useState(""); // input= show on screen, setInput= update the input
 
