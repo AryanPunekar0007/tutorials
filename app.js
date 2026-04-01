@@ -1,2 +1,3 @@
-x = "Hello World!"
-console.log(x)
+let x = "Hello World!"
+x = 123
+console.log(x);
